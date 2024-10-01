@@ -20,6 +20,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+input:focus {
+  outline: none; /* This removes the default outline */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
