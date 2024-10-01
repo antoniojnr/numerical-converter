@@ -279,7 +279,7 @@ export default function Home() {
           <div className='bg-sky-100 text-sky-700 text-3xl text-center p-4 mb-2 rounded-md font-mono'>
             {result}
           </div>
-          <div className='p-2 text-sm bg-sky-400 text-sky-100 rounded-md'>
+          <div className='p-2 text-sm bg-sky-400 text-sky-100 rounded-md hidden'>
             <button
               onClick={() => setIsExpanded(!isExpanded)}
               className='text-sky-100 p-1 rounded-lg hover:text-sky-200 focus:outline-none'
