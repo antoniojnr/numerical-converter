@@ -10,7 +10,7 @@ export default function Home() {
   const [result, setResult] = useState("");
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleFromBaseChange = (e) => {
+  const handleFromBaseChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedFromBase(e.target.value);
     setInputValue("");
     setResult("");
@@ -31,7 +31,7 @@ export default function Home() {
     }
   };
 
-  const handleToBaseChange = (e) => {
+  const handleToBaseChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedToBase(e.target.value);
 
     if (inputValue === "") return;
@@ -64,7 +64,7 @@ export default function Home() {
     }
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
     let mask;
 
