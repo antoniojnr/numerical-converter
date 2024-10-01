@@ -50,9 +50,9 @@ export default function Home() {
 
     if (base == "2") {
       let formattedBinary = value.toString(2);
-      let mustPad = formattedBinary.length % 4 !== 0;
-      let division = Math.floor(formattedBinary.length / 4);
-      let pad = mustPad ? (division + 1) * 4 : formattedBinary.length;
+      const mustPad = formattedBinary.length % 4 !== 0;
+      const division = Math.floor(formattedBinary.length / 4);
+      const pad = mustPad ? (division + 1) * 4 : formattedBinary.length;
       console.log("pad is", pad, "length is ", formattedBinary.length);
       formattedBinary = formattedBinary
         .padStart(pad, "0")
@@ -89,12 +89,6 @@ export default function Home() {
         selectedToBase
       );
     }
-    // setSelectedToBase("");
-    // setResult("");
-  };
-
-  const handleConvert = () => {
-    console.log(`Valor: ${inputValue}, Base: ${selectedFromBase}`);
   };
 
   return (
