@@ -306,7 +306,7 @@ export default function Home() {
           className='flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 text-sm'
         >
           <img src='/github-mark.svg' alt='GitHub' className='w-4 h-4' />
-          <span className='font-medium'>View on GitHub</span>
+          <span className='font-medium'>Developed by Antonio Dias</span>
         </a>
       </div>
     </div>
