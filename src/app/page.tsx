@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+// import gitHubIcon from "/github-mark.svg";
 
 export default function Home() {
   const [inputValue, setInputValue] = useState("");
@@ -297,6 +298,18 @@ export default function Home() {
           </div>
         </div>
       )}
+
+      <div className='flex justify-center mt-6'>
+        <a
+          href='https://github.com/antoniojnr/numerical-converter'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 text-sm'
+        >
+          <img src='/github-mark.svg' alt='GitHub' className='w-4 h-4' />
+          <span className='font-medium'>View on GitHub</span>
+        </a>
+      </div>
     </div>
   );
 }
