@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-// import gitHubIcon from "/github-mark.svg";
 
 export default function Home() {
   const [inputValue, setInputValue] = useState("");
